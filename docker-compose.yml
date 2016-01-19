@@ -1,0 +1,7 @@
+kannel:
+  image: bulktrade/kannel:1.5.0
+  ports:
+    - 13013 # smsbox
+  #volumes:
+  #  - "./kannel.conf:/etc/kannel/kannel.conf"
+  #  - "./opensmppbox.conf:/etc/kannel/opensmppbox.conf"
