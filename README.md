@@ -1,0 +1,2 @@
+# docker-kannel
+Kannel dockerized
