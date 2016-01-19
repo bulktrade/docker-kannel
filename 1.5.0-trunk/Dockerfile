@@ -53,6 +53,6 @@ COPY kannel.conf /etc/kannel/kannel.conf
 
 EXPOSE 13013
 
-VOLUME ["/var/spool/kannel"]
+VOLUME ["/var/spool/kannel", "/etc/kannel", "/var/log/kannel"]
 
 CMD ["/usr/bin/supervisord"]
