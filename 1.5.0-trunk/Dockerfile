@@ -17,7 +17,7 @@ RUN cd /usr/local && \
 	mv trunk gateway && \
 	cd /usr/local/src/kannel/gateway && \
 	./configure -prefix=/usr/local/kannel -with-mysql -with-mysql-dir=/usr/lib/mysql/ -enable-debug -enable-assertions -with-defaults=speed \
-	-disable-localtime -enable-start-stop-daemon -enable-pam && \
+	-enable-localtime -enable-start-stop-daemon -enable-pam && \
 	touch .depend && \
 	make depend && \
 	make && \
