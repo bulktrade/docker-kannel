@@ -51,7 +51,7 @@ RUN cd /usr/local && \
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY kannel.conf /etc/kannel/kannel.conf
 
-EXPOSE 13013
+EXPOSE 13013 13000
 
 VOLUME ["/var/spool/kannel", "/etc/kannel", "/var/log/kannel"]
 

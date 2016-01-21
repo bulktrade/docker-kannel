@@ -2,6 +2,7 @@ kannel:
   image: bulktrade/kannel:1.5.0-trunk
   ports:
     - 13013 # smsbox
+    - 13000 # kannel admin
   #volumes:
   #  - "./kannel.conf:/etc/kannel/kannel.conf"
   #  - "./opensmppbox.conf:/etc/kannel/opensmppbox.conf"
