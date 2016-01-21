@@ -6,7 +6,7 @@ Simply kannel docker image. Mount your own conf files to use.
 Usage with docker-compose:
 
 	kannel:
-      image: bulktrade/kannel:1.4.4
+      image: bulktrade/kannel:r5159
       ports:
         - 13013 # smsbox
         - 13000 # kannel admin
@@ -20,4 +20,4 @@ Start container with docker-conpose:
 	
 Start container with docker:
 
-	docker run --rm bulktrade/kannel:1.5.0-trunk
+	docker run --rm bulktrade/kannel:r5159
