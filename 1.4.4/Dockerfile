@@ -13,8 +13,8 @@ RUN locale-gen en_US && \
 RUN cd /usr/local && \
 	mkdir /usr/local/src/kannel && \
 	cd /usr/local/src/kannel && \
-	svn co https://svn.kannel.org/gateway/trunk && \
-	mv trunk gateway && \
+	svn co https://svn.kannel.org/gateway/tags/version_1_4_4 && \
+	mv version_1_4_4 gateway && \
 	cd /usr/local/src/kannel/gateway && \
 	./configure -prefix=/usr/local/kannel -with-mysql -with-mysql-dir=/usr/lib/mysql/ -enable-debug -enable-assertions -with-defaults=speed \
 	-enable-localtime -enable-start-stop-daemon -enable-pam && \
