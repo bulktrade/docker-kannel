@@ -9,6 +9,7 @@ Usage with docker-compose:
       image: bulktrade/kannel:1.4.4
       ports:
         - 13013 # smsbox
+        - 13000 # kannel admin
       #volumes:
       #  - "./kannel.conf:/etc/kannel/kannel.conf"
       #  - "./opensmppbox.conf:/etc/kannel/opensmppbox.conf"
