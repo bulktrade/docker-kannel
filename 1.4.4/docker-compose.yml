@@ -1,5 +1,5 @@
 kannel:
-  image: bulktrade/kannel:1.5.0-trunk
+  image: bulktrade/kannel:1.4.4
   ports:
     - 13013 # smsbox
     - 13000 # kannel admin
