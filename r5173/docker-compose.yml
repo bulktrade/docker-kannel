@@ -1,0 +1,10 @@
+kannel:
+  image: bulktrade/kannel:r5173
+  ports:
+    - 13013 # smsbox
+    - 13000 # kannel admin
+    - 2346 # smpp
+    - 13015 # input http dlr
+  #volumes:
+  #  - "./kannel.conf:/etc/kannel/kannel.conf"
+  #  - "./opensmppbox.conf:/etc/kannel/opensmppbox.conf"
