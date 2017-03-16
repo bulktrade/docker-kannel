@@ -13,7 +13,7 @@ RUN locale-gen en_US && \
 RUN cd /usr/local && \
 	mkdir /usr/local/src/kannel && \
 	cd /usr/local/src/kannel && \
-	svn checkout -r 5173 https://svn.kannel.org/gateway/trunk && \
+	svn checkout --non-interactive --trust-server-cert -r 5173 https://svn.kannel.org/gateway/trunk && \
 	mv trunk gateway && \
 	cd /usr/local/src/kannel/gateway && \
 	./configure -prefix=/usr/local/kannel -with-mysql -with-mysql-dir=/usr/lib/mysql/ -enable-debug -enable-assertions -with-defaults=speed \
